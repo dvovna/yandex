@@ -1,0 +1,29 @@
+$progressbar_color: #6acb26
+$pregressbar_container_color: white
+$progressbar_height: 20px
+$pregressbar_width: 300px
+$pregressbar_radius: 10px
+
+.progressbar
+	display: inline-block
+	background-color: $pregressbar_container_color
+	box-shadow: 0px -1px 5px rgba(0,0,0,0.5)
+	border: none
+	border-radius: $pregressbar_radius
+	height: $progressbar_height
+	position: relative
+	width: $pregressbar_width
+	span
+		position: absolute
+		font-weight: bold
+		font-size: 15px
+		text-align: center
+		line-height: $progressbar_height
+		width: 100%
+	div
+		background-color: $progressbar_color
+		border-radius: $pregressbar_radius
+		display: inline-block
+		float: left
+		height: 100%
+		width: 20%

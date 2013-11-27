@@ -102,12 +102,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: gold;
 }
 
-/* line 11, ../sass/style.sass */
-body {
-  background-color: whitesnow;
+/* line 7, ../sass/_progressbar.sass */
+.progressbar {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  position: relative;
+  width: 300px;
+}
+/* line 16, ../sass/_progressbar.sass */
+.progressbar span {
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+}
+/* line 23, ../sass/_progressbar.sass */
+.progressbar div {
+  background-color: #6acb26;
+  border-radius: 10px;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  width: 20%;
 }
 
-/* line 14, ../sass/style.sass */
+/* line 12, ../sass/style.sass */
+body {
+  background-color: whitesnow;
+  padding: 20px;
+}
+
+/* line 16, ../sass/style.sass */
 div {
   display: block;
 }
