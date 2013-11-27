@@ -1,45 +1,27 @@
+$star_content: "\2605"
+$star_starred: gold
+$star_hovered: #FFFF80
+$star_normal: grey
+$star_size: 40px
+
 .rating-control
-	display: block
-	width: 200px
+	width: 100%
 	.star
-		border-right:  100px solid transparent
-		border-bottom: 70px  solid $star_color
-		border-left:   100px solid transparent
-		color: $star_color
-		position: relative
-		margin: 60px 0
-		height: 0px
-		width: 0px
-		-moz-transform:    rotate(35deg)
-		-webkit-transform: rotate(35deg)
-		-ms-transform:     rotate(35deg)
-		-o-transform:      rotate(35deg)
-		&:before 
-			border-bottom: 80px solid $star_color
-			border-left: 30px solid transparent
-			border-right: 30px solid transparent
-			content: ''
-			position: absolute
-			height: 0
-			top: -45px
-			left: -65px
-			width: 0
-			-webkit-transform: rotate(-35deg)
-			-moz-transform:    rotate(-35deg)
-			-ms-transform:     rotate(-35deg)
-			-o-transform:      rotate(-35deg)
-		&:after
-			border-right: 100px solid transparent
-			border-bottom: 70px solid $star_color
-			border-left: 100px solid transparent
-			color: $star_color
-			content: ''
-			position: absolute
-			top: 3px
-			left: -105px
-			height: 0px
-			width: 0px
-			-webkit-transform: rotate(-70deg)
-			-moz-transform:    rotate(-70deg)
-			-ms-transform:     rotate(-70deg)
-			-o-transform:      rotate(-70deg)
+		display: block
+		cursor: pointer
+		float: left
+		font-size: $star_size
+		color: $star_normal
+		margin: 0px
+		padding: 0px
+		&:before
+			content: $star_content
+		&.starred
+			color: $star_starred
+		&:hover:before
+			color: $star_hovered
+		&:hover ~ :before
+			color: $star_normal
+	&:hover > .star
+		color: $star_starred
+
