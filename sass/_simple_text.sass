@@ -1,0 +1,31 @@
+.simple_text
+	padding: 10px
+	h3
+		font-size: 24px
+		padding: 0px 0px 15px 10px
+	.two_colums
+		@include make_columns(2, 48%)
+		display: inline-block
+		max-height: 290px
+		text-align: left
+		vertical-align: top
+		min-width: 920px
+		overflow: hidden
+		p
+			display: block
+			text-indent: 15px
+			padding: 0px 5% 10px 10px
+		ul
+			display: block
+			position: relative
+			padding-left: 10px
+			width: 45%
+			li
+				margin: 5px 0
+				&:before
+					position: absolute
+					content: " - "
+					left: 0px
+				&.underlined
+					display: inline
+					border-bottom: 1px dashed #999

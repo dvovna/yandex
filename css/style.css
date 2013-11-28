@@ -223,13 +223,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #74bddc;
 }
 
-/* line 15, ../sass/style.sass */
+/* line 1, ../sass/_simple_text.sass */
+.simple_text {
+  padding: 10px;
+}
+/* line 3, ../sass/_simple_text.sass */
+.simple_text h3 {
+  font-size: 24px;
+  padding: 0px 0px 15px 10px;
+}
+/* line 6, ../sass/_simple_text.sass */
+.simple_text .two_colums {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 48%;
+  -webkit-column-gap: 48%;
+  column-gap: 48%;
+  display: inline-block;
+  max-height: 290px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 920px;
+  overflow: hidden;
+}
+/* line 14, ../sass/_simple_text.sass */
+.simple_text .two_colums p {
+  display: block;
+  text-indent: 15px;
+  padding: 0px 5% 10px 10px;
+}
+/* line 18, ../sass/_simple_text.sass */
+.simple_text .two_colums ul {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  width: 45%;
+}
+/* line 23, ../sass/_simple_text.sass */
+.simple_text .two_colums ul li {
+  margin: 5px 0;
+}
+/* line 25, ../sass/_simple_text.sass */
+.simple_text .two_colums ul li:before {
+  position: absolute;
+  content: " - ";
+  left: 0px;
+}
+/* line 29, ../sass/_simple_text.sass */
+.simple_text .two_colums ul li.underlined {
+  display: inline;
+  border-bottom: 1px dashed #999999;
+}
+
+/* line 26, ../sass/style.sass */
 body {
   background-color: white;
   padding: 20px;
 }
 
-/* line 19, ../sass/style.sass */
+/* line 30, ../sass/style.sass */
 div {
   display: block;
 }

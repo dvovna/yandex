@@ -2,14 +2,25 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
 $body_color: white
 $text_color: black
+
+@mixin make_columns ($colums-number, $colums_width)
+	-moz-column-count: $colums-number
+	-webkit-column-count: $colums-number
+	column-count: $colums-number
+	-moz-column-gap: $colums_width
+	-webkit-column-gap: $colums_width
+	column-gap: $colums_width
+
 
 @import "compass/reset"
 @import "_rating_control"
 @import "_progressbar"
 @import "_button"
 @import "_browsers_list"
+@import "_simple_text"
 
 
 body
