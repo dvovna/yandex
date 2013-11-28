@@ -1,24 +1,26 @@
 .browsers_list
 	display: inline-block
+	position: relative
 	width: 100%
 	li
 		display: block
-		position: relative
 		float: left
 		cursor: pointer
-		line-height: 130px
-		height: 130px
+		font-size: 16px
+		height: 135px
+		opacity: 0.6
+		line-height: 135px
+		text-align: center
 		width: 130px
 		&:last-child
 			float: right
 		&:before
+			background: url("../images/browsers.png") no-repeat 0 0
+			content: ''
 			display: block
+			height: 135px
 			position: absolute
-			background: url("../images/browsers.png")
-		&:after
-			display: block
-			position: absolute
-
+			width: 130px
 		&.mozilla:before
 			background-position: -130px 0px
 		&.opera:before
@@ -26,4 +28,18 @@
 		&.safary:before
 			background-position: -390px 0px
 		&.ie:before
-			background-position: -520px 0px
+			background-position: -513px 0px
+		&.chrome
+			color: #e40000
+			.green
+				color: #00bc3a
+			.yellow
+				color: #ffef80
+		&.mozilla
+			color: #fea300
+		&.opera
+			color: #ff0000
+		&.safary
+			color: #747474
+		&.ie
+			color: #74bddc
