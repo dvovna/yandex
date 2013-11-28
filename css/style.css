@@ -147,13 +147,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 3px 25px;
 }
 
-/* line 14, ../sass/style.sass */
+/* line 1, ../sass/_browsers_list.sass */
+.browsers_list {
+  display: inline-block;
+  width: 100%;
+}
+/* line 4, ../sass/_browsers_list.sass */
+.browsers_list li {
+  display: block;
+  position: relative;
+  float: left;
+  cursor: pointer;
+  line-height: 130px;
+  height: 130px;
+  width: 130px;
+}
+/* line 12, ../sass/_browsers_list.sass */
+.browsers_list li:last-child {
+  float: right;
+}
+/* line 14, ../sass/_browsers_list.sass */
+.browsers_list li:before {
+  display: block;
+  position: absolute;
+  background: url("../images/browsers.png");
+}
+/* line 18, ../sass/_browsers_list.sass */
+.browsers_list li:after {
+  display: block;
+  position: absolute;
+}
+/* line 22, ../sass/_browsers_list.sass */
+.browsers_list li.mozilla:before {
+  background-position: -130px 0px;
+}
+/* line 24, ../sass/_browsers_list.sass */
+.browsers_list li.opera:before {
+  background-position: -260px 0px;
+}
+/* line 26, ../sass/_browsers_list.sass */
+.browsers_list li.safary:before {
+  background-position: -390px 0px;
+}
+/* line 28, ../sass/_browsers_list.sass */
+.browsers_list li.ie:before {
+  background-position: -520px 0px;
+}
+
+/* line 15, ../sass/style.sass */
 body {
   background-color: white;
   padding: 20px;
 }
 
-/* line 18, ../sass/style.sass */
+/* line 19, ../sass/style.sass */
 div {
   display: block;
 }

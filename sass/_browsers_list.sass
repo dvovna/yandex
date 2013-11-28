@@ -1,0 +1,29 @@
+.browsers_list
+	display: inline-block
+	width: 100%
+	li
+		display: block
+		position: relative
+		float: left
+		cursor: pointer
+		line-height: 130px
+		height: 130px
+		width: 130px
+		&:last-child
+			float: right
+		&:before
+			display: block
+			position: absolute
+			background: url("../images/browsers.png")
+		&:after
+			display: block
+			position: absolute
+
+		&.mozilla:before
+			background-position: -130px 0px
+		&.opera:before
+			background-position: -260px 0px
+		&.safary:before
+			background-position: -390px 0px
+		&.ie:before
+			background-position: -520px 0px
