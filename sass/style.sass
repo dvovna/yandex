@@ -5,6 +5,7 @@
 
 $body_color: white
 $text_color: black
+$link_color: whitesmoke
 
 @mixin make_columns ($colums-number, $colums_width)
 	-moz-column-count: $colums-number
@@ -25,7 +26,43 @@ $text_color: black
 
 body
 	background-color: $body_color
-	padding: 20px
+	padding: 50px
 
-div
+ul, div
 	display: block
+
+h2
+	font-size: 22px
+	padding-left: 10px
+
+.backButton
+	@extend .button
+	background-color: whitesmoke
+	position: fixed
+	top: 5px
+	left: 5px
+
+.siteMapContainer
+	display: inline-block
+	width: 200px
+	li
+		display: inline-block
+		background-color: grey
+		border: 1px solid white
+		float: left
+		overflow: hidden
+		width: 100%
+		&:hover
+			background-color: $link_color
+			a
+				background-color: $link_color
+				color: grey
+		a
+			display: block
+			height: 100%
+			text-decoration: none
+			font-size: 20px
+			padding: 5px
+			color: $link_color
+			width: 100%
+				
