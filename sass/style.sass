@@ -28,14 +28,21 @@ body
 ul, div
 	display: block
 
+h1
+	font-size: 22px
+	text-indent: 5px
+	margin-bottom: 5px
+
 
 
 .mainContainer
 	background-color: $main_container_color
+	width: 100%
 	.siteMapMenu
 		@include add_item_selecting($menu_item_color, $link_color)
 		display: inline-block
-		width: 200px
+		float: left
+		width: 15%
 		li
 			display: inline-block
 			border: 1px solid white
@@ -49,4 +56,22 @@ ul, div
 				font-size: 20px
 				padding: 5px
 				width: 100%
-					
+	.description
+		display: inline-block
+		background-color: grey
+		float: left
+		margin-left: 5px
+		padding: 10px
+		width: 80%
+		ul li
+			padding: 3px
+			font-size: 20px
+			&:hover
+				color: black
+			a
+				@extend .button
+				@include add_gradient(grey, black, black)
+				background-color: black
+				color: $link_color
+				height: 20px
+			

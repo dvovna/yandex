@@ -2,7 +2,7 @@
 @mixin add_gradient ($start_color, $end_color, $middle_color)
 	background-color: #93F607
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start_color), to($end_color), color-stop(.5,$middle_color))
-	background: -moz-linear-gradient(top, $end_color 0%, $middle_color 50%, $start_color 100%)
+	background: -moz-linear-gradient(top, $start_color 0%, $middle_color 50%, $end_color 100%)
 
 @mixin add_text_gradient ($start_color, $end_color)
 	background: -webkit-linear-gradient($start_color, $end_color)
