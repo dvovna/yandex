@@ -1,27 +1,32 @@
 $star_content: "\2605"
-$star_starred: gold
-$star_hovered: #FFFF80
-$star_normal: grey
+$star_starred: #FF7800
+$star_hovered: #FCFFB7
+$star_normal: #858585
+$yellow: #E0E0E0
 $star_size: 40px
 
 .rating-control
 	width: 100%
 	.star
+		@include add_text_gradient($yellow, $star_normal)
+		color: $star_normal
 		display: block
 		cursor: pointer
 		float: left
 		font-size: $star_size
-		color: $star_normal
 		margin: 0px
 		padding: 0px
 		&:before
 			content: $star_content
 		&.starred
 			color: $star_starred
+			@include add_text_gradient($star_hovered, $star_starred)
 		&:hover:before
 			color: $star_hovered
+			@include add_text_gradient($star_hovered, $star_starred)
 		&:hover ~ :before
 			color: $star_normal
+			@include add_text_gradient($yellow, $star_normal)
 	&:hover > .star
 		color: $star_starred
-
+		@include add_text_gradient($star_hovered, $star_starred)

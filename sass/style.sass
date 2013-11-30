@@ -15,10 +15,18 @@ $link_color: whitesmoke
 	-webkit-column-gap: $colums_width
 	column-gap: $colums_width
 
-@mixin add_gradient ($startColor, $endColor, $middleColor)
+@mixin add_gradient ($start_color, $end_color, $middle_color)
 	background-color: #93F607
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($startColor), to($endColor), color-stop(.5,$middleColor))
-	background: -moz-linear-gradient(top, $endColor 0%, $middleColor 50%, $startColor 100%)
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start_color), to($end_color), color-stop(.5,$middle_color))
+	background: -moz-linear-gradient(top, $end_color 0%, $middle_color 50%, $start_color 100%)
+
+		
+		
+@mixin add_text_gradient ($start_color, $end_color)
+	background: -webkit-linear-gradient($start_color, $end_color)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
 
 
 @import "compass/reset"
