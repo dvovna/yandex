@@ -1,14 +1,20 @@
 .browsers_list
 	display: inline-block
+	border-radius: 5px
 	position: relative
 	width: 100%
+	&.black
+		background-color: black
+	&.grey
+		background-color: grey
+	&.no_imgs li:before
+		background: none
 	li
 		display: block
 		float: left
 		cursor: pointer
 		font-size: 16px
 		height: 135px
-		opacity: 0.6
 		line-height: 135px
 		text-align: center
 		width: 130px

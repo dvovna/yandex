@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -108,23 +108,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: white;
   box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
   border: none;
+  border: 1px solid grey \9 ;
   border-radius: 10px;
   height: 20px;
   position: relative;
   width: 300px;
 }
-/* line 16, ../sass/_progressbar.sass */
+/* line 17, ../sass/_progressbar.sass */
 .progressbar span {
   position: absolute;
   font-weight: bold;
   font-size: 15px;
   text-align: center;
+  left: 0px;
   line-height: 20px;
   width: 100%;
 }
-/* line 23, ../sass/_progressbar.sass */
+/* line 25, ../sass/_progressbar.sass */
 .progressbar div {
-  background-color: #6acb26;
+  background-color: #93f607;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#93f607), to(#93f607), color-stop(0.5, #00ce20));
+  background: -moz-linear-gradient(top, #93f607 0%, #00ce20 50%, #93f607 100%);
   border-radius: 10px;
   display: inline-block;
   float: left;
@@ -132,12 +136,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 20%;
 }
 
-/* line 4, ../sass/_button.sass */
+/* line 3, ../sass/_button.sass */
 .button, .backButton {
   display: inline-block;
   border: 1px solid #d0d0d0;
   border-radius: 8px;
-  background-color: red;
   box-shadow: none;
   color: black;
   font-size: 14px;
@@ -145,31 +148,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: center;
   text-decoration: none;
   padding: 3px 25px;
+  background-color: #93f607;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#e4e4e4), color-stop(0.5, #e4e4e4));
+  background: -moz-linear-gradient(top, #e4e4e4 0%, #e4e4e4 50%, #f2f2f2 100%);
+}
+
+/* line 17, ../sass/_button.sass */
+.backButton {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 5px;
+  left: 5px;
 }
 
 /* line 1, ../sass/_browsers_list.sass */
 .browsers_list {
   display: inline-block;
+  border-radius: 5px;
   position: relative;
   width: 100%;
 }
-/* line 5, ../sass/_browsers_list.sass */
+/* line 6, ../sass/_browsers_list.sass */
+.browsers_list.black {
+  background-color: black;
+}
+/* line 8, ../sass/_browsers_list.sass */
+.browsers_list.grey {
+  background-color: grey;
+}
+/* line 10, ../sass/_browsers_list.sass */
+.browsers_list.no_imgs li:before {
+  background: none;
+}
+/* line 12, ../sass/_browsers_list.sass */
 .browsers_list li {
   display: block;
   float: left;
   cursor: pointer;
   font-size: 16px;
   height: 135px;
-  opacity: 0.6;
   line-height: 135px;
   text-align: center;
   width: 130px;
 }
-/* line 15, ../sass/_browsers_list.sass */
+/* line 21, ../sass/_browsers_list.sass */
 .browsers_list li:last-child {
   float: right;
 }
-/* line 17, ../sass/_browsers_list.sass */
+/* line 23, ../sass/_browsers_list.sass */
 .browsers_list li:before {
   background: url("../images/browsers.png") no-repeat 0 0;
   content: "";
@@ -178,47 +204,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   width: 130px;
 }
-/* line 24, ../sass/_browsers_list.sass */
+/* line 30, ../sass/_browsers_list.sass */
 .browsers_list li.mozilla:before {
   background-position: -130px 0px;
 }
-/* line 26, ../sass/_browsers_list.sass */
+/* line 32, ../sass/_browsers_list.sass */
 .browsers_list li.opera:before {
   background-position: -260px 0px;
 }
-/* line 28, ../sass/_browsers_list.sass */
+/* line 34, ../sass/_browsers_list.sass */
 .browsers_list li.safary:before {
   background-position: -390px 0px;
 }
-/* line 30, ../sass/_browsers_list.sass */
+/* line 36, ../sass/_browsers_list.sass */
 .browsers_list li.ie:before {
   background-position: -513px 0px;
 }
-/* line 32, ../sass/_browsers_list.sass */
+/* line 38, ../sass/_browsers_list.sass */
 .browsers_list li.chrome {
   color: #e40000;
 }
-/* line 34, ../sass/_browsers_list.sass */
+/* line 40, ../sass/_browsers_list.sass */
 .browsers_list li.chrome .green {
   color: #00bc3a;
 }
-/* line 36, ../sass/_browsers_list.sass */
+/* line 42, ../sass/_browsers_list.sass */
 .browsers_list li.chrome .yellow {
   color: #ffef80;
 }
-/* line 38, ../sass/_browsers_list.sass */
+/* line 44, ../sass/_browsers_list.sass */
 .browsers_list li.mozilla {
   color: #fea300;
 }
-/* line 40, ../sass/_browsers_list.sass */
+/* line 46, ../sass/_browsers_list.sass */
 .browsers_list li.opera {
   color: red;
 }
-/* line 42, ../sass/_browsers_list.sass */
+/* line 48, ../sass/_browsers_list.sass */
 .browsers_list li.safary {
   color: #747474;
 }
-/* line 44, ../sass/_browsers_list.sass */
+/* line 50, ../sass/_browsers_list.sass */
 .browsers_list li.ie {
   color: #74bddc;
 }
@@ -275,38 +301,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom: 1px dashed #999999;
 }
 
-/* line 27, ../sass/style.sass */
+/* line 32, ../sass/style.sass */
 body {
   background-color: white;
   padding: 50px;
 }
 
-/* line 31, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 ul, div {
   display: block;
 }
 
-/* line 34, ../sass/style.sass */
-h2 {
-  font-size: 22px;
-  padding-left: 10px;
+/* line 41, ../sass/style.sass */
+.mainContainer {
+  background-color: green;
 }
-
-/* line 38, ../sass/style.sass */
-.backButton {
-  background-color: whitesmoke;
-  position: fixed;
-  top: 5px;
-  left: 5px;
-}
-
-/* line 45, ../sass/style.sass */
-.siteMapContainer {
+/* line 43, ../sass/style.sass */
+.mainContainer .siteMapContainer {
   display: inline-block;
   width: 200px;
 }
-/* line 48, ../sass/style.sass */
-.siteMapContainer li {
+/* line 46, ../sass/style.sass */
+.mainContainer .siteMapContainer li {
   display: inline-block;
   background-color: grey;
   border: 1px solid white;
@@ -314,17 +330,17 @@ h2 {
   overflow: hidden;
   width: 100%;
 }
-/* line 55, ../sass/style.sass */
-.siteMapContainer li:hover {
+/* line 53, ../sass/style.sass */
+.mainContainer .siteMapContainer li:hover {
   background-color: whitesmoke;
 }
-/* line 57, ../sass/style.sass */
-.siteMapContainer li:hover a {
+/* line 55, ../sass/style.sass */
+.mainContainer .siteMapContainer li:hover a {
   background-color: whitesmoke;
   color: grey;
 }
-/* line 60, ../sass/style.sass */
-.siteMapContainer li a {
+/* line 58, ../sass/style.sass */
+.mainContainer .siteMapContainer li a {
   display: block;
   height: 100%;
   text-decoration: none;

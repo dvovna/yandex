@@ -9,6 +9,7 @@ $pregressbar_radius: 10px
 	background-color: $pregressbar_container_color
 	box-shadow: 0px -1px 5px rgba(0,0,0,0.5)
 	border: none
+	border: 1px solid grey \9 //for ie8
 	border-radius: $pregressbar_radius
 	height: $progressbar_height
 	position: relative
@@ -18,10 +19,11 @@ $pregressbar_radius: 10px
 		font-weight: bold
 		font-size: 15px
 		text-align: center
+		left: 0px
 		line-height: $progressbar_height
 		width: 100%
 	div
-		background-color: $progressbar_color
+		@include add_gradient(#93F607, #93F607, #00CE20)
 		border-radius: $pregressbar_radius
 		display: inline-block
 		float: left
