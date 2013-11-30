@@ -67,11 +67,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../sass/_rating_control.sass */
+/* line 9, ../sass/_rating_control.sass */
 .rating-control {
   width: 100%;
 }
-/* line 10, ../sass/_rating_control.sass */
+/* line 11, ../sass/_rating_control.sass */
 .rating-control .star {
   background: -webkit-linear-gradient(#e0e0e0, #858585);
   -webkit-background-clip: text;
@@ -84,32 +84,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0px;
   padding: 0px;
 }
-/* line 19, ../sass/_rating_control.sass */
+/* line 20, ../sass/_rating_control.sass */
 .rating-control .star:before {
   content: "\2605";
 }
-/* line 21, ../sass/_rating_control.sass */
+/* line 22, ../sass/_rating_control.sass */
 .rating-control .star.starred {
   color: #ff7800;
   background: -webkit-linear-gradient(#fcffb7, #ff7800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 24, ../sass/_rating_control.sass */
+/* line 25, ../sass/_rating_control.sass */
 .rating-control .star:hover:before {
-  color: #fcffb7;
+  color: #ff7800;
   background: -webkit-linear-gradient(#fcffb7, #ff7800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 27, ../sass/_rating_control.sass */
+/* line 28, ../sass/_rating_control.sass */
 .rating-control .star:hover ~ :before {
   color: #858585;
   background: -webkit-linear-gradient(#e0e0e0, #858585);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 30, ../sass/_rating_control.sass */
+/* line 31, ../sass/_rating_control.sass */
 .rating-control:hover > .star {
   color: #ff7800;
   background: -webkit-linear-gradient(#fcffb7, #ff7800);
@@ -274,12 +274,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 6, ../sass/_simple_text.sass */
 .simple_text .two_colums {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2;
-  -moz-column-gap: 48%;
-  -webkit-column-gap: 48%;
-  column-gap: 48%;
   display: inline-block;
   max-height: 290px;
   text-align: left;
@@ -287,55 +281,68 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   min-width: 920px;
   overflow: hidden;
 }
-/* line 14, ../sass/_simple_text.sass */
+/* line 13, ../sass/_simple_text.sass */
+.simple_text .two_colums > li {
+  display: inline-block;
+  width: 48%;
+}
+/* line 16, ../sass/_simple_text.sass */
+.simple_text .two_colums > li.left {
+  float: left;
+}
+/* line 18, ../sass/_simple_text.sass */
+.simple_text .two_colums > li.right {
+  float: right;
+}
+/* line 20, ../sass/_simple_text.sass */
 .simple_text .two_colums p {
   display: block;
   text-indent: 15px;
   padding: 0px 5% 10px 10px;
 }
-/* line 18, ../sass/_simple_text.sass */
+/* line 24, ../sass/_simple_text.sass */
 .simple_text .two_colums ul {
   position: relative;
   padding-left: 10px;
   width: 45%;
 }
-/* line 22, ../sass/_simple_text.sass */
+/* line 28, ../sass/_simple_text.sass */
 .simple_text .two_colums ul li {
   margin: 5px 0;
 }
-/* line 24, ../sass/_simple_text.sass */
+/* line 30, ../sass/_simple_text.sass */
 .simple_text .two_colums ul li:before {
   position: absolute;
   content: " - ";
   left: 0px;
 }
-/* line 28, ../sass/_simple_text.sass */
+/* line 34, ../sass/_simple_text.sass */
 .simple_text .two_colums ul li.underlined {
   display: inline;
   border-bottom: 1px dashed #999999;
 }
 
-/* line 40, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 body {
   background-color: white;
   padding: 50px;
 }
 
-/* line 44, ../sass/style.sass */
+/* line 35, ../sass/style.sass */
 ul, div {
   display: block;
 }
 
-/* line 49, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 .mainContainer {
   background-color: green;
 }
-/* line 51, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 .mainContainer .siteMapContainer {
   display: inline-block;
   width: 200px;
 }
-/* line 54, ../sass/style.sass */
+/* line 45, ../sass/style.sass */
 .mainContainer .siteMapContainer li {
   display: inline-block;
   background-color: grey;
@@ -344,16 +351,16 @@ ul, div {
   overflow: hidden;
   width: 100%;
 }
-/* line 61, ../sass/style.sass */
+/* line 52, ../sass/style.sass */
 .mainContainer .siteMapContainer li:hover {
   background-color: whitesmoke;
 }
-/* line 63, ../sass/style.sass */
+/* line 54, ../sass/style.sass */
 .mainContainer .siteMapContainer li:hover a {
   background-color: whitesmoke;
   color: grey;
 }
-/* line 66, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
 .mainContainer .siteMapContainer li a {
   display: block;
   height: 100%;

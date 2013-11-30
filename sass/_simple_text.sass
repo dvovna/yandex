@@ -4,13 +4,19 @@
 		font-size: 24px
 		padding: 0px 0px 15px 10px
 	.two_colums
-		@include make_columns(2, 48%)
 		display: inline-block
 		max-height: 290px
 		text-align: left
 		vertical-align: top
 		min-width: 920px
 		overflow: hidden
+		>li
+			display: inline-block
+			width: 48%
+			&.left
+				float: left
+			&.right
+				float: right
 		p
 			display: block
 			text-indent: 15px
