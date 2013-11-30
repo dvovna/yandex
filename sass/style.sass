@@ -3,29 +3,22 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+
 $body_color: white
 $text_color: black
 $link_color: whitesmoke
-
-
-@mixin add_gradient ($start_color, $end_color, $middle_color)
-	background-color: #93F607
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start_color), to($end_color), color-stop(.5,$middle_color))
-	background: -moz-linear-gradient(top, $end_color 0%, $middle_color 50%, $start_color 100%)
-
-@mixin add_text_gradient ($start_color, $end_color)
-	background: -webkit-linear-gradient($start_color, $end_color)
-	-webkit-background-clip: text
-	-webkit-text-fill-color: transparent
-
+$main_container_color: green
+$menu_item_color: grey
 
 
 @import "compass/reset"
+@import "_mixins"
 @import "_rating_control"
 @import "_progressbar"
 @import "_button"
 @import "_browsers_list"
 @import "_simple_text"
+
 
 
 body
@@ -38,28 +31,22 @@ ul, div
 
 
 .mainContainer
-	background-color: green
-	.siteMapContainer
+	background-color: $main_container_color
+	.siteMapMenu
+		@include add_item_selecting($menu_item_color, $link_color)
 		display: inline-block
 		width: 200px
 		li
 			display: inline-block
-			background-color: grey
 			border: 1px solid white
 			float: left
 			overflow: hidden
 			width: 100%
-			&:hover
-				background-color: $link_color
-				a
-					background-color: $link_color
-					color: grey
 			a
 				display: block
 				height: 100%
 				text-decoration: none
 				font-size: 20px
 				padding: 5px
-				color: $link_color
 				width: 100%
 					
