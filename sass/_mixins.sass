@@ -1,6 +1,6 @@
 
 @mixin add_gradient ($start_color, $end_color, $middle_color)
-	background-color: #93F607
+	background-color: $middle_color
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($start_color), to($end_color), color-stop(.5,$middle_color))
 	background: -moz-linear-gradient(top, $start_color 0%, $middle_color 50%, $end_color 100%)
 

@@ -1,8 +1,4 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -141,7 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 25, ../sass/_progressbar.sass */
 .progressbar div {
-  background-color: #93f607;
+  background-color: #00ce20;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#93f607), to(#93f607), color-stop(0.5, #00ce20));
   background: -moz-linear-gradient(top, #93f607 0%, #00ce20 50%, #93f607 100%);
   border-radius: 10px;
@@ -151,28 +147,64 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 20%;
 }
 
-/* line 3, ../sass/_button.sass */
-.button, .backButton, .mainContainer .description ul li a {
+/* line 3, ../sass/_buttons.sass */
+.button, .back_btn, .big_btn, .btn_with_img, .mainContainer .description ul li a {
+  background-color: #e4e4e4;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#e4e4e4), color-stop(0.5, #e4e4e4));
+  background: -moz-linear-gradient(top, #f2f2f2 0%, #e4e4e4 50%, #e4e4e4 100%);
   display: inline-block;
   border: 1px solid #d0d0d0;
   border-radius: 8px;
   box-shadow: none;
   color: black;
   font-size: 14px;
+  line-height: 14px;
   text-align: center;
   text-decoration: none;
   padding: 3px 25px;
-  background-color: #93f607;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#e4e4e4), color-stop(0.5, #e4e4e4));
-  background: -moz-linear-gradient(top, #f2f2f2 0%, #e4e4e4 50%, #e4e4e4 100%);
+  margin: 5px;
+}
+/* line 16, ../sass/_buttons.sass */
+.button:hover, .back_btn:hover, .big_btn:hover, .btn_with_img:hover, .mainContainer .description ul li a:hover {
+  background-color: #e4e4e4;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e4e4e4), to(#f2f2f2), color-stop(0.5, #e4e4e4));
+  background: -moz-linear-gradient(top, #e4e4e4 0%, #e4e4e4 50%, #f2f2f2 100%);
+  color: black;
 }
 
-/* line 16, ../sass/_button.sass */
-.backButton {
+/* line 21, ../sass/_buttons.sass */
+.back_btn {
   background-color: whitesmoke;
+  border-radius: 0px;
   position: fixed;
   top: 5px;
-  left: 5px;
+  left: 15px;
+}
+
+/* line 29, ../sass/_buttons.sass */
+.big_btn {
+  overflow: hidden;
+  max-width: 150px;
+}
+
+/* line 34, ../sass/_buttons.sass */
+.btn_with_img {
+  position: relative;
+  height: 47px;
+  padding: 0px 5px;
+  line-height: 47px;
+  padding-left: 50px;
+}
+/* line 41, ../sass/_buttons.sass */
+.btn_with_img:before {
+  display: block;
+  content: "";
+  background: url("../images/yandex.ico") no-repeat 0;
+  position: absolute;
+  width: 50px;
+  height: 47px;
+  left: 0;
+  top: 0;
 }
 
 /* line 1, ../sass/_browsers_list.sass */
@@ -318,30 +350,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom: 1px dashed #999999;
 }
 
-/* line 24, ../sass/style.sass */
+/* line 18, ../sass/style.sass */
 body {
   background-color: white;
   padding: 50px;
 }
 
-/* line 28, ../sass/style.sass */
+/* line 22, ../sass/style.sass */
 ul, div {
   display: block;
 }
 
-/* line 31, ../sass/style.sass */
+/* line 25, ../sass/style.sass */
 h1 {
   font-size: 22px;
   text-indent: 5px;
   margin-bottom: 5px;
 }
 
-/* line 38, ../sass/style.sass */
+/* line 32, ../sass/style.sass */
 .mainContainer {
   background-color: green;
   width: 100%;
 }
-/* line 41, ../sass/style.sass */
+/* line 35, ../sass/style.sass */
 .mainContainer .siteMapMenu {
   display: inline-block;
   float: left;
@@ -364,7 +396,7 @@ h1 {
 .mainContainer .siteMapMenu li a {
   color: whitesmoke;
 }
-/* line 46, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 .mainContainer .siteMapMenu li {
   display: inline-block;
   border: 1px solid white;
@@ -372,7 +404,7 @@ h1 {
   overflow: hidden;
   width: 100%;
 }
-/* line 52, ../sass/style.sass */
+/* line 46, ../sass/style.sass */
 .mainContainer .siteMapMenu li a {
   display: block;
   height: 100%;
@@ -381,7 +413,7 @@ h1 {
   padding: 5px;
   width: 100%;
 }
-/* line 59, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 .mainContainer .description {
   display: inline-block;
   background-color: grey;
@@ -390,21 +422,29 @@ h1 {
   padding: 10px;
   width: 80%;
 }
-/* line 66, ../sass/style.sass */
+/* line 60, ../sass/style.sass */
 .mainContainer .description ul li {
   padding: 3px;
   font-size: 20px;
 }
-/* line 69, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 .mainContainer .description ul li:hover {
   color: black;
 }
-/* line 71, ../sass/style.sass */
+/* line 65, ../sass/style.sass */
 .mainContainer .description ul li a {
-  background-color: #93f607;
+  background-color: black;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(grey), to(black), color-stop(0.5, black));
   background: -moz-linear-gradient(top, grey 0%, black 50%, black 100%);
   background-color: black;
   color: whitesmoke;
+  font-family: monospace;
   height: 20px;
+}
+/* line 72, ../sass/style.sass */
+.mainContainer .description ul li a:hover {
+  background-color: black;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(grey), color-stop(0.5, black));
+  background: -moz-linear-gradient(top, black 0%, black 50%, grey 100%);
+  color: whitesmoke;
 }
