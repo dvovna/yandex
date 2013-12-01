@@ -6,7 +6,7 @@ $star_size: 40px
 $yellow: #FCFFB7
 $grey: #E0E0E0
 
-.rating-control
+.rating_control
 	width: 100%
 	.star
 		@include add_text_gradient($grey, $star_normal)
@@ -31,3 +31,8 @@ $grey: #E0E0E0
 	&:hover > .star
 		color: $star_starred
 		@include add_text_gradient($yellow, $star_starred)
+
+
+.big_rating_control
+	@extend .rating_control
+	

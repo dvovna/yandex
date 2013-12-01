@@ -64,11 +64,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 9, ../sass/_rating_control.sass */
-.rating-control {
+.rating_control, .big_rating_control {
   width: 100%;
 }
 /* line 11, ../sass/_rating_control.sass */
-.rating-control .star {
+.rating_control .star, .big_rating_control .star {
   background: -webkit-linear-gradient(#e0e0e0, #858585);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -81,32 +81,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0px;
 }
 /* line 20, ../sass/_rating_control.sass */
-.rating-control .star:before {
+.rating_control .star:before, .big_rating_control .star:before {
   content: "\2605";
 }
 /* line 22, ../sass/_rating_control.sass */
-.rating-control .star.starred {
+.rating_control .star.starred, .big_rating_control .star.starred {
   color: #ff7800;
   background: -webkit-linear-gradient(#fcffb7, #ff7800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 /* line 25, ../sass/_rating_control.sass */
-.rating-control .star:hover:before {
+.rating_control .star:hover:before, .big_rating_control .star:hover:before {
   color: #ff7800;
   background: -webkit-linear-gradient(#fcffb7, #ff7800);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 /* line 28, ../sass/_rating_control.sass */
-.rating-control .star:hover ~ :before {
+.rating_control .star:hover ~ :before, .big_rating_control .star:hover ~ :before {
   color: #858585;
   background: -webkit-linear-gradient(#e0e0e0, #858585);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 /* line 31, ../sass/_rating_control.sass */
-.rating-control:hover > .star {
+.rating_control:hover > .star, .big_rating_control:hover > .star {
   color: #ff7800;
   background: -webkit-linear-gradient(#fcffb7, #ff7800);
   -webkit-background-clip: text;
