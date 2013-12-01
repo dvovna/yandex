@@ -162,7 +162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 3, ../sass/_buttons.sass */
-.button, .back_btn, .big_btn, .btn_with_img, h1 .description ul li a {
+.button, .back_btn, .big_btn, .btn_with_img, .mainContainer .description ul li a {
   background-color: #e4e4e4;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#e4e4e4), color-stop(0.5, #e4e4e4));
   background: -moz-linear-gradient(top, #f2f2f2 0%, #e4e4e4 50%, #e4e4e4 100%);
@@ -179,7 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 5px;
 }
 /* line 16, ../sass/_buttons.sass */
-.button:hover, .back_btn:hover, .big_btn:hover, .btn_with_img:hover, h1 .description ul li a:hover {
+.button:hover, .back_btn:hover, .big_btn:hover, .btn_with_img:hover, .mainContainer .description ul li a:hover {
   background-color: #e4e4e4;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e4e4e4), to(#f2f2f2), color-stop(0.5, #e4e4e4));
   background: -moz-linear-gradient(top, #e4e4e4 0%, #e4e4e4 50%, #f2f2f2 100%);
@@ -213,7 +213,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .btn_with_img:before {
   display: block;
   content: "";
-  background: url("../images/yandex.ico") no-repeat 0;
+  background: url("http://yandex.st/morda-logo/i/favicon.ico") no-repeat 0;
+  background-size: contain;
   position: absolute;
   width: 50px;
   height: 47px;
@@ -380,34 +381,38 @@ h1 {
   font-size: 22px;
   text-indent: 5px;
   margin-bottom: 5px;
+}
+
+/* line 32, ../sass/style.sass */
+.mainContainer {
   background-color: green;
   width: 100%;
 }
 /* line 35, ../sass/style.sass */
-h1 .siteMapMenu {
+.mainContainer .siteMapMenu {
   display: inline-block;
   float: left;
   width: 15%;
 }
 /* line 13, ../sass/_mixins.sass */
-h1 .siteMapMenu li {
+.mainContainer .siteMapMenu li {
   background-color: grey;
 }
 /* line 15, ../sass/_mixins.sass */
-h1 .siteMapMenu li:hover {
+.mainContainer .siteMapMenu li:hover {
   background-color: whitesmoke;
 }
 /* line 17, ../sass/_mixins.sass */
-h1 .siteMapMenu li:hover a {
+.mainContainer .siteMapMenu li:hover a {
   background-color: whitesmoke;
   color: grey;
 }
 /* line 20, ../sass/_mixins.sass */
-h1 .siteMapMenu li a {
+.mainContainer .siteMapMenu li a {
   color: whitesmoke;
 }
 /* line 40, ../sass/style.sass */
-h1 .siteMapMenu li {
+.mainContainer .siteMapMenu li {
   display: inline-block;
   border: 1px solid white;
   float: left;
@@ -415,7 +420,7 @@ h1 .siteMapMenu li {
   width: 100%;
 }
 /* line 46, ../sass/style.sass */
-h1 .siteMapMenu li a {
+.mainContainer .siteMapMenu li a {
   display: block;
   height: 100%;
   text-decoration: none;
@@ -424,7 +429,7 @@ h1 .siteMapMenu li a {
   width: 100%;
 }
 /* line 53, ../sass/style.sass */
-h1 .description {
+.mainContainer .description {
   display: inline-block;
   background-color: grey;
   float: left;
@@ -433,16 +438,16 @@ h1 .description {
   width: 80%;
 }
 /* line 60, ../sass/style.sass */
-h1 .description ul li {
+.mainContainer .description ul li {
   padding: 3px;
   font-size: 20px;
 }
 /* line 63, ../sass/style.sass */
-h1 .description ul li:hover {
+.mainContainer .description ul li:hover {
   color: black;
 }
 /* line 65, ../sass/style.sass */
-h1 .description ul li a {
+.mainContainer .description ul li a {
   background-color: black;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(grey), to(black), color-stop(0.5, black));
   background: -moz-linear-gradient(top, grey 0%, black 50%, black 100%);
@@ -452,7 +457,7 @@ h1 .description ul li a {
   height: 20px;
 }
 /* line 72, ../sass/style.sass */
-h1 .description ul li a:hover {
+.mainContainer .description ul li a:hover {
   background-color: black;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(grey), color-stop(0.5, black));
   background: -moz-linear-gradient(top, black 0%, black 50%, grey 100%);
